@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Vitrine - Bernardin</title>
+
+    <!-- Lien vers Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <!-- Lien vers le fichier CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- 🔥 HEADER : Menu burger -->
+    <header>
+        <div class="burger-menu" id="burger-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+
+        <nav class="menu" id="navigation">
+            <ul>
+                <li><a href="#a-propos">Qui sommes-nous</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#reservation">Réservation</a></li>
+                <li><a href="#contact">Contact</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+ <!-- 🔥 SECTION BANNIÈRE -->
+<section id="accueil">
+    <div class="banniere">
+        <!-- 🔥 Encadré avec fond gris transparent -->
+        <div class="encadre-texte">
+            <h1>Bienvenue chez Bernardin</h1>
+            <p>Découvrez l'élégance et le raffinement de la gastronomie.</p>
+            <a href="#menu" class="btn">Voir le Menu</a>
+        </div>
+    </div>
+</section>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Site Vitrine - Bernardin</title>
+    
+        <!-- Lien vers Google Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    
+        <!-- Lien vers le fichier CSS -->
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+    
+     <!-- 🔥 SECTION QUI SOMMES-NOUS -->
+     <section id="a-propos">
+        <div class="contenu-a-propos">
+            <!-- Texte sur la gauche -->
+            <div class="texte-a-propos">
+                <h2>Qui sommes-nous ?</h2>
+                <p>Au cœur d'une tradition familiale transmise de génération en génération, notre restaurant incarne l'alliance parfaite entre héritage et modernité. Portés par la passion du goût et l'amour du détail, nos 6 cuisiniers et 7 serveurs s'engagent chaque jour à offrir une expérience gastronomique d'exception. Chaque plat raconte une histoire, chaque saveur évoque un voyage, et chaque instant passé chez nous devient un souvenir inoubliable. Ici, le raffinement se mêle à la simplicité d'un accueil chaleureux, où l'élégance du cadre sublime la richesse des assiettes. Bienvenue dans un lieu où l'art de la table devient une émotion partagée</p>
+            </div>
+
+            <!-- Diaporama de photos sur la droite -->
+            <div class="diaporama-a-propos">
+                <img src="images/photoprepa2.jpg" class="slide active">
+                <img src="images/photofamille.jpg" class="slide">
+                <img src="images/photoprepa1.jpg" class="slide">
+            </div>
+        </div>
+    </section>
+        
+<!-- 🔥 SECTION MENU -->
+<section id="menu">
+    <h2 class="section-title">Nos Menus</h2>
+
+    <div class="contenu-menu">
+        
+        <!-- Menu 1 : Dégustation -->
+        <div class="menu-item">
+            <h3>Menu Dégustation</h3>
+            <p class="menu-description">Une expérience culinaire unique composée de 7 plats signatures.</p>
+            <a href="menu-degustation.html" class="btn-menu">Voir le menu Dégustation</a>
+        </div>
+
+        <!-- Menu 2 : Gourmet -->
+        <div class="menu-item">
+            <h3>Menu Gourmet</h3>
+            <p class="menu-description">Un voyage culinaire à travers des plats d'exception.</p>
+            <a href="menu-gourmet.html" class="btn-menu">Voir le menu Gourmet</a>
+        </div>
+
+        <!-- Menu 3 : Signature -->
+        <div class="menu-item">
+            <h3>Menu Signature</h3>
+            <p class="menu-description">Notre menu exclusif inspiré des produits du terroir.</p>
+            <a href="menu-signature.html" class="btn-menu">Voir le menu Signature</a>
+        </div>
+
+    </div>
+</section>
+
+
+
+
+       
+    
+        <!-- 🔥 SECTION RÉSERVATION -->
+        <section id="reservation">
+            <h2 class="section-title">Réservez votre table</h2>
+            <p class="description">Choisissez la date, l'heure et le nombre de convives. Nous vous confirmerons rapidement par e-mail.</p>
+    
+            <form id="reservation-form">
+                <div class="form-group">
+                    <label for="date">Date :</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+    
+                <div class="form-group">
+                    <label for="time">Heure :</label>
+                    <select id="time" name="time" required>
+                        <option value="12:00">12:00</option>
+                        <option value="12:30">12:30</option>
+                        <option value="13:00">13:00</option>
+                        <option value="19:00">19:00</option>
+                        <option value="19:30">19:30</option>
+                        <option value="20:00">20:00</option>
+                    </select>
+                </div>
+    
+                <div class="form-group">
+                    <label for="guests">Nombre de convives :</label>
+                    <input type="number" id="guests" name="guests" min="1" max="10" required>
+                </div>
+    
+                <div class="form-group">
+                    <label for="name">Nom et prénom :</label>
+                    <input type="text" id="name" name="name" placeholder="Votre nom" required>
+                </div>
+    
+                <div class="form-group">
+                    <label for="email">Email :</label>
+                    <input type="email" id="email" name="email" placeholder="exemple@mail.com" required>
+                </div>
+    
+                <div class="form-group">
+                    <label for="phone">Téléphone :</label>
+                    <input type="tel" id="phone" name="phone" placeholder="06 12 34 56 78" required>
+                </div>
+    
+                <button type="submit" class="btn">Valider la réservation</button>
+            </form>
+    
+            <p id="confirmation-message" class="confirmation-message">Merci pour votre réservation ! Vous recevrez une confirmation par e-mail sous peu.</p>
+        </section>
+
+    
+    
+<!-- 🔥 SECTION CONTACT -->
+<section id="contact">
+    <h2 class="section-title">Contactez-nous</h2>
+    <p class="description">Pour toute question ou réservation spéciale, n'hésitez pas à nous contacter via les informations ci-dessous.</p>
+
+    <div class="contact-info">
+        <!-- Téléphone -->
+        <div class="contact-item">
+            <h3>Téléphone</h3>
+            <p><a href="tel:+33123456789">+33 1 23 45 67 89</a></p>
+        </div>
+
+        <!-- Email -->
+        <div class="contact-item">
+            <h3>Email</h3>
+            <p><a href="mailto:contact@bernardinrestaurant.com">contact@bernardinrestaurant.com</a></p>
+        </div>
+
+        <!-- Adresse -->
+        <div class="contact-item">
+            <h3>Adresse</h3>
+            <p>12 Rue du Gourmet, 75001 Paris, France</p>
+        </div>
+    </div>
+
+    <!-- Carte Google Maps -->
+    <div class="map-container">
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.9992703444814!2d2.3490145156742573!3d48.864716279287634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e671d77dfc1c1f%3A0x4226213e1f1c3f5!2s12%20Rue%20du%20Gourmet%2C%2075001%20Paris%2C%20France!5e0!3m2!1sfr!2sfr!4v1677508570181!5m2!1sfr!2sfr" 
+            width="100%" 
+            height="300" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy">
+        </iframe>
+    </div>
+</section>
+
+    <!-- 🔥 Lien vers le fichier script.js -->
+    <script src="js/script.js"></script>
+
+</body>
+</html>
